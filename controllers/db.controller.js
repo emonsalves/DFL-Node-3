@@ -1,5 +1,5 @@
 const { Client } = require('pg')
-const dbConfig  = require("../config/db.config.js");
+const dbConfig  = require("../database/db.config.js");
 
 
 const get = async (req, res) => {
