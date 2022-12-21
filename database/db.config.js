@@ -1,7 +1,10 @@
-module.exports = {
+const pool = {
     user: 'postgres',
     host: 'localhost',
-    database: 'emonsalves',
+    database: 'likeme',
     password: 'sa',
     port: 5432,
-};
+    allowExitOnIdle: true
+}
+
+module.exports = { pool };
