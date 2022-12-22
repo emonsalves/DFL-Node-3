@@ -18,6 +18,6 @@ CREATE TABLE posts (id SERIAL, titulo VARCHAR(25), img VARCHAR(1000), descripcio
 ## REQUERIMIENTOS
 <br>
 1.- Habilitar los CORS en el servidor utilizando el paquete npm. <br>
-2.- Usar paquete PG para interactuar con la base de datods. <br>
+2.- Usar paquete PG para interactuar con la base de datos. <br>
 3.- Crear una ruta GET con Express para devolver los registros de una tabla de nuestra data base. <br>
-4.- Crear una ruta POST con Express que reciba y aalmacene en la base de datos un nuevo registro. <br>
+4.- Crear una ruta POST con Express que reciba y almacene en la base de datos un nuevo registro. <br>
