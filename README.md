@@ -25,3 +25,20 @@ CREATE TABLE posts (id SERIAL, titulo VARCHAR(25), img VARCHAR(1000), descripcio
 2.- Usar paquete PG para interactuar con la base de datos.
 3.- Crear una ruta GET con Express para devolver los registros de una tabla de nuestra data base.
 4.- Crear una ruta POST con Express que reciba y almacene en la base de datos un nuevo registro.
+
+## Instalación
+
+```$npm install
+$npm install
+```
+
+## Levantar Server
+
+```$npm run dev
+$npm run dev
+```
+
+## Sitio Web Server
+```
+http://localhost:3000/
+```
