@@ -3,7 +3,6 @@ const databaseService = require('../services/database');
 const getAll = async () => {
     const consulta = "SELECT * FROM posts ORDER BY id ASC";
     const likemeList = await databaseService.query(consulta);
-    console.log("test"+ likemeList.rows[0])
     return likemeList.rows;
 }
 
@@ -13,6 +12,5 @@ const createNew = async (titulo, url, descripcion) => {
     const values = [id, titulo, url, descripcion, 1];
     await databaseService.query(consulta, values);
 }
-
 
 module.exports = { getAll, createNew };
