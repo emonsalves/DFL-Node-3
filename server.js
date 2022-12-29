@@ -11,7 +11,7 @@ const routes = require("./routes/index")
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
-morganBody.app();
+morganBody(app);
 
 // routes
 app.use(routes);
