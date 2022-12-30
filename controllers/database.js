@@ -7,11 +7,12 @@ const getAll = async (req, res) => {
 
 const createNew = async (req, res) => {
     const { titulo, url, descripcion } = req.body;
+    if (!titulo || !url || !descripcion ||
+        typeof titulo !== 'string' || typeof url !== 'string' || typeof descripcion !== 'string') {
+        return res.status(400).json({ message: "Campo vacio o incorrecto" });
+    }
     await modelDatabase.createNew(titulo, url, descripcion);
     res.status(200).send();
 }
 
 module.exports = { getAll, createNew };
-
-
-//FALTA VALIDAR DATOS RECORDAR FRONT ES MODIFICABLE 

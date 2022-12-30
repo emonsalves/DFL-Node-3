@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors')
-// const path = require('path');
+const morganBody = require('morgan-body')
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,8 +9,9 @@ const routes = require("./routes/index")
 
 // middlewares
 app.use(cors());
-app.use(morgan('dev'));
 app.use(express.json());
+app.use(morgan('dev'));
+morganBody(app);
 
 // routes
 app.use(routes);

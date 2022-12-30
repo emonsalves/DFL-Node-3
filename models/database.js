@@ -7,6 +7,7 @@ const getAll = async () => {
 }
 
 const createNew = async (titulo, url, descripcion) => {
+ 
     const id = Math.floor(Math.random() * 9999);
     const consulta = "INSERT INTO posts values ($1, $2, $3, $4, $5)";
     const values = [id, titulo, url, descripcion, 1];
