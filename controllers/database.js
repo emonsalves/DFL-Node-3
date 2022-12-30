@@ -16,6 +16,3 @@ const createNew = async (req, res) => {
 }
 
 module.exports = { getAll, createNew };
-
-
-//FALTA VALIDAR DATOS RECORDAR FRONT ES MODIFICABLE 
